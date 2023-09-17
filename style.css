@@ -1,0 +1,239 @@
+body{
+    font-family: 'Lato', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+nav{
+    background-color: black;
+    color: white;
+    padding: 20px 50px;
+}
+.navTop{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    background-color: gray;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.searchInput{
+    border: none;
+    background-color: transparent;
+}
+.searchInput::placeholder{
+    color:lightgray;
+}
+.limitedOffer{
+    font-size: 20px;
+    border-bottom: 2px solid green;
+    cursor: pointer;
+}
+.navBottom{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    margin-top: 4px;
+
+}
+.menuItem{
+    margin-right: 50px;
+    cursor: pointer;
+    color: lightgray;
+    font-weight: 400;
+}
+
+.slider{
+    background: url("img/backgroundimage1.jpg");
+    clip-path: polygon(0 0, 100% 0, 100% 93%, 0 76%);
+    overflow: hidden;
+}
+
+.sliderWrapper{
+    display: flex;
+    width: 500vw;
+    transition: all 1s ease-in-out;
+}
+
+.sliderItem{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.sliderBg{
+   width: 750px;
+   height: 750px;
+   border-radius: 50%;
+   position: absolute;
+   background-color: green;
+} 
+
+.sliderImg{
+    z-index: 1;
+}
+.sliderTitle{
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    font-size: 60px;
+    font-weight: 900;
+    text-align: center;
+    color: white;
+    z-index: 1;
+}
+.sliderPrice{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    font-size: 60px;
+    font-weight: 300;
+    text-align: center;
+    color: white;
+    border: 1px solid gray;
+    z-index: 1;
+}
+.buyButton{
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    font-size: 30px;
+    font-weight: 900;
+    color: white;
+    background-color: black;
+    border: 1px solid gray;
+    z-index: 1;
+    cursor: pointer;
+}
+.buyButton:hover{
+    background-color: white;
+    color: black;
+}
+.sliderItem:nth-child(1) .sliderBg{
+    background-color: #369e62;
+}
+.sliderItem:nth-child(2) .sliderBg{
+    background-color: #ceb708;
+}
+.sliderItem:nth-child(3) .sliderBg{
+    background-color: #d20197;
+}
+.sliderItem:nth-child(4) .sliderBg{
+    background-color: #1081b1;
+}
+.sliderItem:nth-child(5) .sliderBg{
+    background-color: #f77307;
+}
+
+.sliderItem:nth-child(1) .sliderPrice{
+    color: #369e62;
+}
+.sliderItem:nth-child(2) .sliderPrice{
+    color: #ceb708;
+}
+.sliderItem:nth-child(3) .sliderPrice{
+    color: #d20197;
+}
+.sliderItem:nth-child(4) .sliderPrice{
+    color: #1081b1;
+}
+.sliderItem:nth-child(5) .sliderPrice{
+    color: #f77307;
+}
+
+.features{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+}
+.feature{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.featureIcon{
+    width: 50px;
+    height: 50px;
+}
+
+.featureTitle{
+    font: 20px;
+    font-weight: 600;
+    margin: 20px;
+}
+.featureDesc{
+    color: gray;
+    width: 50%;
+    height: 100%;;
+}
+.product{
+    height: 110vh;
+    background-color: whitesmoke;
+    position: relative;
+    clip-path: polygon(0 18%, 100% 0, 100% 100%, 0% 100%);
+}
+.productImg{
+    width: 50%;
+    display: block;
+    margin-left: 15px;
+    transform: translateY(100px);
+}
+.productDetails{
+    position: absolute;
+    top: 10%;
+    right: 0;
+    width: 40%;
+    padding: 50px;
+}
+.productTitle{
+    font-size: 74px;
+    font-weight: 900;
+}
+.productDesc{
+    font-size: 24px;
+    color: gray;
+}
+.colors,.sizes{
+    display: flex;
+    margin-bottom: 20px;
+}
+.color{
+    width: 32px;
+    height: 32px;
+    border-radius: 5px;
+    background-color: black;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.color:last-child{
+    background-color: darkblue;
+}
+.size{
+    padding: 5px 20px;
+    border: 1px solid black;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+.productButton{
+    float: right;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+.productButton:hover{
+    background-color: white;
+    color: black;
+}
