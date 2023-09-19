@@ -4,16 +4,16 @@ const menuItems = document.querySelectorAll(".menuItem");
 const products = [
     {
       id: 1,
-      title: "Bata",
+      title: "Sketchers",
       price: 4056,
       colors: [
         {
           code: "black",
-          img: "./img/Bata.png",
+          img: "./img/sketchers.png",
         },
         {
           code: "darkblue",
-          img: "./img/BATA2.PNG",
+          img: "./img/hippe.png",
         },
       ],
     },
@@ -25,11 +25,11 @@ const products = [
       price: 5786.85,
       colors: [
         {
-          code: "lightgray",
+          code: "red",
           img: "./img/adidas.png",
         },
         {
-          code: "green",
+          code: "grey",
           img: "./img/jordan2.png",
         },
       ],
@@ -40,7 +40,7 @@ const products = [
       price: 9056.85,
       colors: [
         {
-          code: "lightgray",
+          code: "Pink",
           img: "./img/reebok.png",
         },
         {
@@ -55,7 +55,7 @@ const products = [
       price: 12666.85,
       colors: [
         {
-          code: "black",
+          code: "blue",
           img: "./img/nike.png",
         },
         {
@@ -70,8 +70,8 @@ const products = [
       price: 20056.85,
       colors: [
         {
-          code: "gray",
-          img: "./img/jordon.png",
+          code: "orange",
+          img: "./img/crater2.png",
         },
         {
           code: "black",
@@ -87,7 +87,7 @@ const products = [
   const currentProductTitle = document.querySelector(".productTitle"); 
   const currentProductPrice = document.querySelector(".productPrice"); 
   const currentProductColors = document.querySelectorAll(".color");
-  const currentProductSizes = document.querySelectorAll(".sizes");
+  const currentProductSizes = document.querySelectorAll(".size");
 
 menuItems.forEach((item, index) => {
     item.addEventListener("click", () => {
@@ -107,8 +107,33 @@ menuItems.forEach((item, index) => {
 });
 
 
-currentProductColors.forEach((color,index)=>{
-    color.addEventListener("click", ()=>{
-        currentProductImg.src = chosenProduct.colors[index].img
-    })
-})
+currentProductColors.forEach((color, index) => {
+  color.addEventListener("click", () => {
+    currentProductImg.src = chosenProduct.colors[index].img;
+  });
+});
+
+currentProductSizes.forEach((size, index) => {
+  size.addEventListener("click", () => {
+    currentProductSizes.forEach((size) => {
+      size.style.backgroundColor = "white";
+      size.style.color = "black";
+    });
+    size.style.backgroundColor = "black";
+    size.style.color = "white";
+  });
+});
+
+  const productButton = document.querySelector(".productButton"); 
+  const payment = document.querySelector(".payment"); 
+  const close = document.querySelector(".close"); 
+
+  productButton.addEventListener("click",()=>{
+    payment.style.display="flex"
+  })
+
+  close.addEventListener("click",()=>{
+    payment.style.display="none"
+  })
+
+
