@@ -13,7 +13,7 @@ const products = [
         },
         {
           code: "darkblue",
-          img: "./img/hippe.png",
+          img: "./img/sketchers2.png",
         },
       ],
     },
@@ -29,8 +29,8 @@ const products = [
           img: "./img/adidas.png",
         },
         {
-          code: "grey",
-          img: "./img/jordan2.png",
+          code: "skyblue",
+          img: "./img/adidas2.png",
         },
       ],
     },
@@ -45,7 +45,7 @@ const products = [
         },
         {
           code: "green",
-          img: "./img/blazer2.png",
+          img: "./img/reebok2.png",
         },
       ],
     },
@@ -59,8 +59,8 @@ const products = [
           img: "./img/nike.png",
         },
         {
-          code: "lightgray",
-          img: "./img/crater2.png",
+          code: "red",
+          img: "./img/nike2.png",
         },
       ],
     },
@@ -75,7 +75,7 @@ const products = [
         },
         {
           code: "black",
-          img: "./img/hippie2.png",
+          img: "./img/crater.png",
         },
       ],
     },
@@ -135,5 +135,6 @@ currentProductSizes.forEach((size, index) => {
   close.addEventListener("click",()=>{
     payment.style.display="none"
   })
+
 
 
