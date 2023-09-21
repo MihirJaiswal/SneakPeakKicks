@@ -424,3 +424,147 @@ fMenuTitle{
     font-weight: 300;
     font-size: 40;
 }
+
+@media screen and (max-width:480px) {
+    nav{
+        padding: 20px;
+    }
+    .toper{
+        width: 60%;
+        height: 60%;
+        margin-top: 5px;
+    }
+    .hurryup{
+        font-size: 20px;
+    }
+    .search{
+        display: none;
+    }
+
+    .navBottom{
+        flex-wrap: wrap;
+    }
+    .menuItem{
+        margin: 20px;
+        font-weight: 700;
+        font-size: 20px;
+    }
+
+    .slider{
+        clip-path: none;
+    }
+    .sliderImg{
+        width: 100%;
+        height: 100%;
+    }
+    .sliderBg{
+        width: 100%;
+        height: 100%;
+    }
+    .sliderTitle{
+        display: none;
+    }
+    .sliderPrice{
+        top: unset;
+        margin: 0;
+        bottom: 0;
+        left: 0;
+        font-size: 50px;
+        background-color: lightgray;
+    }
+    .buyButton{
+        top: 0;
+        right: 0;
+    }
+    .features{
+       flex-direction: column;
+       margin-top: 5px;
+    }
+    .featureIcon{
+        padding-top: 15px;
+    }
+    .featureTitle{
+        margin: 10px;
+    }
+    .product{
+        clip-path: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 125vh;
+    }
+    .productImg{
+        width: 80%;
+        display: flex;
+        align-items: start;
+        transform: none;
+        margin-top: -00;
+    }
+    .productDetails{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        position: relative;
+    }
+    .productTitle{
+        font-size: 50px;
+        margin: 0;
+        margin-top: -140px;
+    }
+   .gallery{
+    display: none;
+   }
+
+   .newSeason{
+    flex-direction: column;
+   }
+   .nsItem:nth-child(2){
+    padding: 50px;
+   }
+   .nsImg{
+    height: fit-content;
+   }
+   .footer{
+    flex-direction: column;
+    align-items: center;
+   }
+   .footerLeft{
+    padding: 20px;
+    width: 90%;
+    font-size: 10px;
+   }
+   .fListItem{
+    font-size: 15px;
+   }
+
+   .footerRight{
+    padding: 20px;
+    width: 90%;
+    align-items: center;
+    background-color: whitesmoke;
+   }
+   .fMail{
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+   }
+   .fIcon{
+    height: 30px;
+    width: 30px;
+    margin-top: 8px;
+    margin-bottom: 15px; 
+   }
+   .fIcons{
+    margin-right: 10px;
+   }
+   .fMenuTitle{
+    font-size: 20px;
+   }
+   .payment{
+    width: 72%;
+   }
+}
