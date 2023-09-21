@@ -54,7 +54,7 @@ nav{
 
 .slider{
     background: url("img/backgroundimage1.jpg");
-    clip-path: polygon(0 0, 100% 0, 100% 82%, 1% 70%);
+    clip-path: polygon(0 0, 100% 0, 100% 82%, 0 70%);
     overflow: hidden;
 }
 
